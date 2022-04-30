@@ -1,3 +1,7 @@
+$(function () {
+    $(".botao-remover").click(removeLinha);
+});
+
 function inserePlacar() {
     let corpoTabela = $(".placar").find("tbody");
     let usuario = "Usuário Padrão";
@@ -28,5 +32,3 @@ function removeLinha() {
     event.preventDefault();
     $(this).parent().parent().remove();
 }
-
-$(".botao-remover").click(removeLinha);
