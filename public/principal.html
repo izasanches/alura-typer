@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Alura Typer</title>
+    <link rel="stylesheet" href="css/libs/materialize.min.css">
+    <link rel="stylesheet" href="css/libs/google-fonts.css">
+    <link rel="stylesheet" href="css/estilos.css">
+</head>
+
+<body>
+    <div class="container">
+        <h1 class="center">Alura Typer</h1>
+        <p class="frase center">Lorem ipsum dolor sit amet, consectetur adipisicing elit. A amet ex cum explicabo minima sed, magnam cupiditate sunt beatae aut doloremque, minus eos placeat maiores ipsam laborum odit vero iste!</p>
+
+        <ul class="informacoes center">
+            <li>
+                <i class="small material-icons icones">description</i>
+                <span id="tamanho-frase">30</span> palavras
+            </li>
+            <li>
+                <i class="small material-icons icones">query_builder</i>
+                <span id="cronometro">30</span> segundos
+            </li>
+        </ul>
+
+        <textarea class="campo-digitacao" cols="30" rows="10"></textarea>
+        <div class="botoes">
+            <a class="btn-floating btn-large waves-effect waves-light red" id="botao-reiniciar">
+                <i class="material-icons">restore</i>
+            </a>
+        </div>
+        <ul class="center">
+            <li><span id="contador-caracteres">0</span> caracteres</li>
+            <li><span id="contador-palavras">0</span> palavras</li>
+        </ul>
+
+        <section class="placar">
+            <h3 class="center">Placar</h3>
+            <table class="centered bordered">
+                <thead>
+                    <tr>
+                        <th>Nome</th>
+                        <th>Nro. de palavras</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Usuário Padrão</td>
+                        <td>15</td>
+                        <td><a class="botao-remover" href="#">
+                                <i class="small material-icons">delete</i>
+                            </a>
+                        </td>
+                    </tr>                    
+                </tbody>
+            </table>
+        </section>
+    </div>
+
+    <script src="js/jquery.js"></script>    
+    <script src="js/main.js"></script>
+    <script src="js/placar.js"></script>
+
+</body>
+
+</html>
